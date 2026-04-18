@@ -12,12 +12,12 @@
         "description": ""
     },
     "d7Catalog.Pice.getList": {
-        "prefix": ["d7CatalogPiceGetList","d7PiceGetList","PiceGetList","GetPrices","Prices","цены"],
+        "prefix": ["d7CatalogPiceGetList","d7PiceGetList","d7PiceList","d7PicesList","PiceGetList","GetPrices","Prices","цены"],
         "body": [
             "\\$rdbPrice = \\\\Bitrix\\\\Catalog\\\\Model\\\\Price::getList([",
             "\t\t'order'=>['PRICE'=>'ASC'],",
             "\t\t'filter'=>[",
-            "\t\t\t\t'CATALOG_GROUP_ID'=>array_column(\\$lstGroups,'ID'",
+            "\t\t\t\t'CATALOG_GROUP_ID'=>array_column(\\$lstGroups,'ID'),",
             "\t\t\t\t'PRODUCT_ID'=>\\$ProductId",
             "\t\t\t]",
             "\t]);",
